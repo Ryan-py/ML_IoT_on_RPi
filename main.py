@@ -13,7 +13,7 @@ hum = 0.0
 pred = 0.0
 
 # Load model
-model_path = '/home/pi/dishan/Pi_iot_ml/my_model.h5'
+model_path = '/my_model.h5'
 model = tf.keras.models.load_model(model_path)
 
 # StandardScaler for data preprocessing
@@ -21,8 +21,8 @@ scaler = StandardScaler()
 scaler.fit([[0, 0, 0]])  # Fit with dummy data, assuming shape [temperature, humidity, pressure]
 
 # Replace with your ThingSpeak Channel ID and Write API Key
-channel_id = "Y2453103"
-write_api_key = "PUJNPO73X3G2AT56"
+channel_id = "xxxxxxxx"
+write_api_key = "xxxxxxxxxx"
 
 # Termination flag for threads
 terminate_threads = False
